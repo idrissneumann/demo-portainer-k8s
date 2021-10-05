@@ -8,7 +8,7 @@ spec:
   rules:
   - http:
       paths:
-      - path: /portainer
+      - path: /
         pathType: Prefix
         backend:
           service:
