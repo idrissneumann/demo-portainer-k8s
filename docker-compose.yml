@@ -6,7 +6,7 @@ services:
     container_name: devoxxfr_amadeus_ui_fpm
     restart: unless-stopped
     env_file:
-      - .env
+      - .demo.env
   devoxxfr-amadeus-ui-nginx:
     image: comworkio/devoxxfr-amadeus-ui-nginx:latest
     container_name: devoxxfr_amadeus_ui_nginx
@@ -14,4 +14,4 @@ services:
     ports:
       - 80:80
     env_file:
-      - .env
+      - .demo.env
