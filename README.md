@@ -37,3 +37,7 @@ Create a user password `admin` / `portainer1234` for example.
 The you can try to deploy the demo app from the docker-compose file on Kubernetes:
 
 ![deployment-docker-compose](./img/deployment-docker-compose.png)
+
+The result will be:
+
+![deployment-result](./img/deployment-result.png)
