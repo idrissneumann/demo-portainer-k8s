@@ -30,7 +30,7 @@ kubectl create namespace portainer
 kubectl -n portainer apply -k .
 ```
 
-Then here you go: http://localhost:9081/portainer
+Then here you go: http://localhost:9081/
 
 Create a user password `admin` / `portainer1234` for example.
 
