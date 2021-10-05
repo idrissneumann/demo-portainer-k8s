@@ -36,7 +36,9 @@ Create a user password `admin` / `portainer1234` for example.
 
 ## Deploy an app on portainer from docker-compose files
 
-You can try to deploy the demo app from the docker-compose file on Kubernetes:
+The demo application is built from [this repository](https://gitlab.comwork.io/oss/devoxx2021-redhat-amadeus-contest).
+
+You can try to deploy the demo app from the `docker-compose` file on Kubernetes:
 
 ![deployment-docker-compose](./img/deployment-docker-compose.png)
 
