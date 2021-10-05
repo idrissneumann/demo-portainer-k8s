@@ -1,0 +1,3 @@
+
+resources:
+  - portainer-nodeport.yaml
