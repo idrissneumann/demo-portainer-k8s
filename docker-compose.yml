@@ -5,13 +5,12 @@ services:
     image: comworkio/devoxxfr-amadeus-ui-fpm:latest
     container_name: devoxxfr_amadeus_ui_fpm
     restart: unless-stopped
-    env_file:
-      - demo-env
+    environment:
+      - API_URL=https://devoxx2021-redhat-amadeus-contest-api.comwork.io
+      - API_URL_INSIDE_CONTAINER=https://devoxx2021-redhat-amadeus-contest-api.comwork.io
   devoxxfr-amadeus-ui-nginx:
     image: comworkio/devoxxfr-amadeus-ui-nginx:latest
     container_name: devoxxfr_amadeus_ui_nginx
     restart: unless-stopped
     ports:
       - 80:80
-    env_file:
-      - demo-env
