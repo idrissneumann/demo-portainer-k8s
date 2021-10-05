@@ -34,7 +34,9 @@ Then here you go: http://localhost:9081/
 
 Create a user password `admin` / `portainer1234` for example.
 
-The you can try to deploy the demo app from the docker-compose file on Kubernetes:
+## Deploy an app on portainer from docker-compose files
+
+You can try to deploy the demo app from the docker-compose file on Kubernetes:
 
 ![deployment-docker-compose](./img/deployment-docker-compose.png)
 
