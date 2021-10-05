@@ -20,7 +20,7 @@ k3d cluster create localdevr --api-port 6550 -p "9081:80@loadbalancer"
 ## Upgrade portainer manifest
 
 ```shell
-curl https://raw.githubusercontent.com/portainer/portainer-k8s/master/portainer.yaml -o portainer.yaml
+curl https://raw.githubusercontent.com/portainer/portainer-k8s/master/portainer-nodeport.yaml -o portainer.yaml
 ```
 
 ## Deploy
@@ -31,3 +31,6 @@ kubectl -n portainer apply -k .
 ```
 
 Then here you go: http://localhost:9081/portainer
+
+Create a user password `admin` / `portainer1234` for example.
+
