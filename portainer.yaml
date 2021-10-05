@@ -30,7 +30,7 @@ metadata:
   labels:
     io.portainer.kubernetes.application.stack: portainer
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: app-portainer
   ports:
@@ -38,12 +38,10 @@ spec:
       protocol: TCP
       port: 9000
       targetPort: 9000
-      nodePort: 30777
     - name: edge
       protocol: TCP
       port: 8000
       targetPort: 8000
-      nodePort: 30776
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -68,4 +66,6 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 9000
+          protocol: TCP
+        - containerPort: 8000
           protocol: TCP

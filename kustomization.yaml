@@ -1,3 +1,4 @@
 
 resources:
-  - portainer-nodeport.yaml
+  - portainer.yaml
+  - ingress.yaml
