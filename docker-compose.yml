@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  devoxxfr-amadeus-ui-fpm:
+    image: comworkio/devoxxfr-amadeus-ui-fpm:latest
+    container_name: devoxxfr_amadeus_ui_fpm
+    restart: unless-stopped
+    env_file:
+      - .env
+  devoxxfr-amadeus-ui-nginx:
+    image: comworkio/devoxxfr-amadeus-ui-nginx:latest
+    container_name: devoxxfr_amadeus_ui_nginx
+    restart: unless-stopped
+    ports:
+      - 8012:80
+    env_file:
+      - .env
