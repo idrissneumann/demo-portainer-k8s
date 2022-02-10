@@ -9,6 +9,7 @@
 * Main repo: https://gitlab.comwork.io/oss/demo-portainer-k8s
 * Github mirror: https://github.com/idrissneumann/demo-portainer-k8s.git
 * Gitlab mirror: https://gitlab.com/ineumann/demo-portainer-k8s.git
+* Bitbucket mirror: https://bitbucket.org/idrissneumann/demo-portainer-k8s.git
 
 ## Install k3d
 
